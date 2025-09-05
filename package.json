@@ -1,0 +1,23 @@
+{
+  "name": "carbonx-backend",
+  "version": "1.0.0",
+  "description": "Gamified Web3 platform rewarding eco-actions with NFTs and tokens. Powered by Verbwire for NFT minting, Akash Network for decentralized hosting, and BlockDAG for instant payments. Smart contracts on Polygon/ETH L2s with Push Protocol for notifications. Combines fun, social impact, and a robust, scalable Web3 stack.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShourjyoXD/CarbonX-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShourjyoXD/CarbonX-backend/issues"
+  },
+  "homepage": "https://github.com/ShourjyoXD/CarbonX-backend#readme",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
