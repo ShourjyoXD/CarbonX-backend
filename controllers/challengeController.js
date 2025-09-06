@@ -1,6 +1,7 @@
 const User = require('../models/User');
 const Challenge = require('../models/Challenge');
 const Proof = require('../models/Proof');
+const { mintNFTForUser } = require('./nftController'); 
 
 // @desc    Submit a challenge proof
 // @route   POST /api/challenges/submit
@@ -29,6 +30,7 @@ exports.submitChallengeProof = async (req, res) => {
       return res.status(404).json({ message: 'Challenge not found' });
     }
 
+    
     const newProof = await Proof.create({
       user: user._id, 
       challenge: challengeId,
@@ -61,6 +63,8 @@ exports.submitChallengeProof = async (req, res) => {
       user.streak = 1; 
     }
     user.lastChallengeDate = today;
+
+    await mintNFTForUser(user, challenge, newProof);
 
     await user.save();
 
