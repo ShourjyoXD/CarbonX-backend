@@ -6,16 +6,6 @@ const userSchema = mongoose.Schema({
     required: true,
     unique: true,
   },
-  username: {
-    type: String,
-    unique: true,
-    sparse: true 
-  },
-  email: {
-    type: String,
-    unique: true,
-    sparse: true
-  },
   xp: {
     type: Number,
     default: 0,
@@ -28,10 +18,13 @@ const userSchema = mongoose.Schema({
     type: Number,
     default: 0,
   },
-  nfts: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'NFT' 
-  }],
+  lastChallengeDate: {
+    type: Date,
+    default: null,
+  },
+  badges: [{
+    type: String,
+  }]
 }, {
   timestamps: true,
 });
