@@ -17,5 +17,3 @@ yarn-error.log*
 # Editor/OS Specific
 .vscode/
 .DS_Store
-# In your .gitignore file
-.env
