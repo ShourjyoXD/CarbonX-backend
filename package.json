@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ShourjyoXD/CarbonX-backend#readme",
   "dependencies": {
+    "dotenv": "^17.2.2",
+    "mongoose": "^8.18.0",
     "nodemon": "^3.1.10"
   }
 }
